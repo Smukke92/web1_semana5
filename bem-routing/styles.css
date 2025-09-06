@@ -1,0 +1,60 @@
+/*BEM
+Block_ Element--Modifier*/
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+.layout{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+}
+.layout_header{
+    background-color: #79ca7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.layout_title{
+    margin: 0;
+    font-size: medium;
+}
+.layout_footer{
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+.layout_footer_tex{
+    margin: 0;
+}
+.layout_main{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-height: 0;
+}
+.nav{
+    background-color: #b96363;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    overflow: auto;
+}
+.nav_link{
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.nav_link:hover, .nav_link_active{
+    background-color: #2b1d1d;
+}
+.content{
+    background-color: #302d82;
+    padding: 16px;
+    overflow: auto;
+    min-height: 0;
+}
